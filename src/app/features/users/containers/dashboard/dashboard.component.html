@@ -1,0 +1,5 @@
+<app-users-list
+  [meta]="meta$ | async"
+  [users]="users$ | async"
+  (loadUsersHandler)="loadUsers($event)"
+></app-users-list>

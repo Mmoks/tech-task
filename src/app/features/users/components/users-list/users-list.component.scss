@@ -1,0 +1,20 @@
+$width: 100%;
+$size: 50px;
+
+table {
+  width: $width;
+}
+
+.table__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: $width / 2;
+}
+
+.user__avatar {
+  flex-shrink: 0;
+  width: $size !important;
+  height: $size !important;
+  border-radius: $width / 2;
+  object-fit: cover;
+}

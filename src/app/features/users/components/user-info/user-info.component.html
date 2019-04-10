@@ -1,0 +1,26 @@
+<mat-card class="user__card" *ngIf="!!user && user.id !== null">
+  <!-- user.id !== null  - in case if user.id === 0 -->
+  <mat-card-header>
+    <div
+      mat-card-avatar
+      class="card__header"
+      [style.background-image]="'url(' + user.avatar + ')'"
+    ></div>
+    <mat-card-title>{{ user.first_name }} {{ user.last_name }} </mat-card-title>
+    <mat-card-subtitle>
+      User
+    </mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="user.avatar" />
+  <mat-card-content>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a
+      condimentum elit. Sed lobortis tempor feugiat. Vivamus quis semper nisi.
+      Pellentesque leo ante, dictum eget porta eu, placerat ut nulla. Phasellus
+      non ipsum interdum, volutpat odio eu, pellentesque lectus.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="back()">BACK</button>
+  </mat-card-actions>
+</mat-card>
